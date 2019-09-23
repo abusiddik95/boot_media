@@ -1,0 +1,108 @@
+/* Default layout. */
+.menu-area{top:70px;}
+.menu-area .nav li{display:inline-block;}
+.menu-area .nav li ul.submenu-one,.submenu-two{ left: -99999px; }
+.menu-area .nav li:hover ul.submenu-one{left:0;background:rgba(0, 0, 0, 0.85);}
+.menu-area .nav li ul li:hover ul.submenu-two{left:100%;}
+.menu-area .nav li .mega-menu{width: 600px;left: -99999px;}
+.menu-area .nav li:hover .mega-menu{left:0;background: rgba(0, 0, 0, 0.85);}
+.welcome-area .welcome-text h2{font-size: 60px;}
+.welcome-area .welcome-text h4{font-size:32px;}
+.welcome-area .welcome-text p{font-size:24px;}
+.intro-text-h2{ font-size: 36px;}
+.quote-area p{padding:50px 20px;}
+.media-team-header h2{font-size: 60px;}
+.service-area .bottom-img{width:40%;}
+.contact-area .massage-area .massage input{width: 46%;}
+.contact-area .massage-area .massage textarea{width: 94%;}
+.massage-area .massage input[type=submit]{width:160px;}
+.comments .single-comment .comment-reply{margin: 25px 0px 25px 100px;}
+.comments .comment-form input{width:380px;}
+.comments .comment-form textarea{width:380px;}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.menu-area{top:70px;}
+.menu-area .nav li{display:inline-block;}
+.menu-area .nav li ul.submenu-one,.submenu-two{ left: -99999px; }
+.menu-area .nav li:hover ul.submenu-one{left:0;background:rgba(0, 0, 0, 0.85);}
+.menu-area .nav li ul li:hover ul.submenu-two{left:5%;}
+.menu-area .nav li .mega-menu{width: 600px;left: -99999px;}
+.menu-area .nav li:hover .mega-menu{left:0;background: rgba(0, 0, 0, 0.85);}
+.welcome-area .welcome-text h2{font-size: 60px;}
+.welcome-area .welcome-text h4{font-size:32px;}
+.welcome-area .welcome-text p{font-size:24px;}
+.intro-text-h2{ font-size: 36px;}
+.quote-area p{padding:50px 20px;}
+.media-team-header h2{font-size: 60px;}
+.service-area .bottom-img{width:40%;}
+.contact-area .massage-area .massage input{width: 46%;}
+.massage-area .massage input[type=submit]{width:160px;}
+.contact-area .massage-area .massage textarea{width: 94%;}
+
+.comments .single-comment .comment-reply{margin: 25px 0px 25px 100px;}
+.comments .comment-form input{width:380px;}
+.comments .comment-form textarea{width:380px;}
+}
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+.menu-area{top:0px;}
+.menu-area .nav li{display:block;}
+.menu-area .nav li .mega-menu{width: auto;}
+.menu-area .nav li:hover ul.submenu-one{display:none;}
+.menu-area .nav li ul li:hover ul.submenu-two{left:5%;}
+.menu-area .nav li ul li:hover ul.submenu-two{left:100%;}
+.menu-area .nav li:hover .mega-menu{display:none;}
+.welcome-area .welcome-text h2{font-size: 24px;}
+.welcome-area .welcome-text h4{font-size:18px;}
+.welcome-area .welcome-text p{font-size:16px;}
+.logo-area img{float:left;}
+.menu-area .navbar-nav{background:#000;}
+.intro-text-h2{ font-size: 30px;}
+.quote-area p{padding:50px 50px;}
+.media-team-header h2{font-size: 30px;}
+.service-area .service-bottom img{ width:90%;}
+.blog-area .single-blog{margin-top:10px;}
+.contact-area .massage-area .massage input{width: 100%;}
+.contact-area .massage-area .massage textarea{width: 100%;}
+.massage-area .massage input[type=submit]{width:160px;}
+
+
+.comments .single-comment .comment-reply{margin: 25px 0px 25px 20px;}
+.comments .comment-form input{width:260px;}
+.comments .comment-form textarea{width:260px;}
+}
+
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.menu-area{top:0px;}
+.menu-area .nav li{display:block;}
+.menu-area .nav li .mega-menu{width: auto;}
+.menu-area .nav li:hover ul.submenu-one{display:none;}
+.menu-area .nav li:hover .mega-menu{display:none;}
+.welcome-area .welcome-text h2{font-size: 24px;}
+.welcome-area .welcome-text h4{font-size:18px;}
+.welcome-area .welcome-text p{font-size:16px;}
+.logo-area img{float:left;}
+.menu-area .navbar-nav{background:#000;}
+.intro-text-h2{ font-size: 30px;}
+.quote-area p{padding:50px 50px;}
+.media-team-header h2{font-size: 30px;}
+.blog-area .single-blog{margin-top:10px;}
+.contact-area .massage-area .massage input{width: 100%;}
+.contact-area .massage-area .massage textarea{width: 100%;}
+.massage-area .massage input[type=submit]{width:160px;}
+
+
+.comments .single-comment .comment-reply{margin: 25px 0px 25px 30px;}
+.comments .comment-form input{width:260px;}
+.comments .comment-form textarea{width:260px;}
+}

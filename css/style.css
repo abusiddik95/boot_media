@@ -1,0 +1,1106 @@
+/*====================================
+------------------------------------
+	1. Typography
+	2. Header
+	3. Welcome Area
+	4. Our Works Area
+	5. Service
+	6. Our Media Team
+	7. Service Area
+	8. Our Media Gallery
+	9. Our Media Blog
+	10. Testimonial Area
+	11. Contact Area
+	12. Map Area
+	12. Footer Area
+	13. Single blog page
+	14. Scrollbar 
+	14. Google Map
+	14. Preloader
+-------------------------------------
+=====================================*/
+
+/* ------------------------------------	*/
+/*  		 Typography			*/
+/* -----------------------------------	*/
+
+a:hover{text-decoration:none;}
+.floatleft{float:left;}
+.floatright{float:right;}
+i:hover{cursor:pointer;}
+.clear{clear:both;}
+ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    position: relative;
+    background: #fff;
+    color: #656565;
+    padding: 0;
+    margin: 0;
+}
+.intro-text{
+	max-width:800px;
+	text-align:center;
+	margin:0 auto;
+}
+.intro-text-h2{
+	color: #000;
+	text-align:center;
+    text-transform: uppercase;
+	margin:15px 0px;
+}
+.intro-text-p{
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+	margin-bottom:50px;
+}
+
+/*---------------CSS for Nav & Logo area---------*/
+
+.logo-area{overflow:hidden;}
+.logo-area img{
+	position:relative;
+	z-index:100;
+}
+.nav-area{
+	position:relative;
+	overflow:hidden;
+}
+.menu-area{
+	z-index: 999;
+}
+.menu-area .nav{
+	list-style:none;
+	float:none;
+}
+.menu-area .nav li{
+	position:relative;
+	float:none;
+}
+.menu-area .nav li a{
+	padding: 25px 20px;
+	font-size: 15px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+}
+.menu-area nav li a:focus{background:none;}
+.menu-area nav li:focus{background:none;}
+.menu-area .nav li ul.submenu-one,.submenu-two{
+    position: absolute;
+    padding-left: 0px;
+    transition: all 0.5s;
+	text-align:left;
+	border-top: 3px solid #ffa201;
+	z-index:9999;
+}
+.submenu-two{top:-5px;}
+.menu-area .nav li ul.submenu-one li{
+	min-width:150px;
+	border-bottom: 1px solid #161617;
+}
+.menu-area .nav li ul.submenu-one li:last-child{
+	border-bottom: 0px solid #161617;
+}
+.menu-area .nav li ul li{
+	display:block;
+	position:relative;
+}
+.menu-area .nav li ul li a{
+	padding:0.8em;
+	display:block;
+}
+.menu-area .nav li ul li ul{
+    position: absolute;
+    left: -99999px;
+	top:0;
+	padding-left:0px;
+    background:rgba(0, 0, 0, 0.85);
+    transition: all 0.5s;
+} 
+.menu-area .nav li .mega-menu{
+    position: absolute;
+	text-align:left;
+	padding:10px;
+	text-align:left;
+    color: #d5d8da;
+	border-top: 3px solid #ffa201;
+	z-index:9999;
+}
+.menu-area .nav li .mega-menu ul{
+	padding-left:10px;
+}
+.menu-area .nav li .mega-menu  h4{
+    padding: 10px 0px 10px 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 0px 0px 5px 00px;
+    color: #fff;
+    border-bottom: 1px solid #ffa201;
+}
+.menu-area .nav li .mega-menu ul li img{
+	width:100%;
+	cursor:pointer;
+}
+.menu-area .nav li .mega-menu ul li .image{
+	width: 100%;
+    height: 100%;
+    position: relative;
+}
+.menu-area .nav li .mega-menu ul li .image:hover .img-hover{
+	display:block;
+}
+.menu-area .nav li .mega-menu ul li i{
+    top: 40%;
+    left: 40%;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #fff;
+    position: absolute;
+}
+.menu-area .nav li .mega-menu ul li .img-hover{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    background: rgba(254, 161, 0, 0.81);
+	display:none;
+}
+.menu-area .nav li .mega-menu ul li a{padding:5px;}
+.menu-area .nav li .mega-menu ul li ul li:first-child {padding-top:25px;}
+.menu-area .nav li ul li:hover ul.submenu-two{
+	left:100%;
+}
+.menu-area .nav li a:hover{
+	color:#FFA200;
+	background:none;
+}
+.menu-area .nav li ul li a:hover{
+	background:#615F5F;
+}
+button.navbar-toggle.collapsed{
+    border:1px solid #FFA200;
+
+}
+button.navbar-toggle.collapsed:hover{
+    background: #FFA200;
+	transition:all 1s;
+}
+span.icon-bar {
+    background: #fff;
+}
+/*---------------CSS for welcome text area---------*/
+
+.welcome-area{
+	background:url(../img/slider/bg1.jpg) no-repeat fixed 0 0;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	margin-top:-97px;
+	text-align:center;
+	margin-bottom:80px;
+}
+.welcome-area  .welcome-overlay{
+	width:100%;
+	height:100%;
+	background:rgba(28, 27, 29, 0.84);
+}
+.welcome-area .welcome-overlay:after{
+	content: "";
+	width: 80px;
+	height: 80px;
+	position: relative;
+	background-image: url(../img/arrow.png);
+	bottom: -44px;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
+.welcome-area .welcome-text{
+	text-align:center;
+	text-transform:uppercase;
+	padding:250px 0px 100px 0px;
+	color:#fff;
+	z-index:9;
+	position:relative;
+}
+
+.welcome-area .welcome-text h2{
+	color: #FFA200;
+	font-weight: 700;
+}
+
+.welcome-area .welcome-text .btn{
+    margin-top: 50px;
+    border-radius: 0;
+    background-color: #FFA200;
+    border: none;
+    font-size: 24px;
+	border-radius:5px;
+    font-weight: 700;
+}
+.welcome-area .welcome-text .btn:hover{
+	background-color:#CE8200;
+}
+.carousel-indicators{
+	display:none;
+}
+.left-control, .right-control {
+  position: absolute;
+  top: 45%;
+  height: 51px;
+  width: 51px;
+  line-height: 48px;
+  border-radius: 50%;
+  border:1px solid #fff;  
+  z-index: 20;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.left-control {
+  left: -51px
+} 
+
+.right-control {
+  right: -51px;
+}
+
+.left-control:hover, 
+.right-control:hover {
+  color: #FFA200;
+  border:1px solid #FFA200;
+}
+#welcome-slider:hover .left-control {
+  left:30px
+} 
+#welcome-slider:hover .right-control {
+  right:30px
+}
+
+#welcome-slider .fa-angle-down {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  color: red;
+  display: inline-block;
+  width: 24px;
+  margin-left: -12px;
+  font-size: 75px;
+  line-height: 24px;
+  z-index: 999;
+  -webkit-animation: bounce 3000ms infinite;
+  animation: bounce 3000ms infinite;
+}
+
+/*---------------CSS for surprise area---------*/
+.surprise-area{}
+.surprise-area .single-image-icon{
+	display:inline-block;
+	position:relative;
+}
+.surprise-area .sp-p{
+	text-transform:uppercase;
+	color:#000;
+	font-size:24px;
+}
+.surprise-area .single-surprise{margin-top:80px;}
+.surprise-area .single-surprise a{text-decoration:none;}
+.surprise-area .triangle{
+    width: 120px;
+    top: -76px;
+    height: 120px;
+    background: #FFA200;
+    border: 3px solid #FFA200;
+    left: -16px;
+	margin-bottom:-42px;
+}
+.surprise-area .single-surprise span{
+	position:relative;
+}
+.surprise-area .single-surprise i{
+    font-size: 35px;
+    color: #FFF;
+    display: inline-block;
+    padding: 30px;
+}
+.surprise-area .single-surprise i:before{
+	z-index:99;
+	position:relative;
+}
+.surprise-area .single-surprise  div.rotate-1{
+    width: 100px;
+    left:0;
+    top:0;
+	background:#FFA200;
+    height: 100px;
+    position: absolute;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	border: 3px solid #FFA200;
+}
+.surprise-area .single-surprise .single-image-icon:hover .rotate-1{background-color:#fff;}
+.surprise-area .single-surprise .single-image-icon:hover i{
+	color: #FFA200; 
+	background-color:#fff;
+	transition:all 1s;
+}
+.surprise-area .single-surprise h2{
+	text-transform: capitalize;
+	font-size: 22px;
+	color: #000;
+	margin-top:40px;
+}
+.surprise-area .single-surprise p{color:#1D1E1D;}
+
+/*---------------CSS for Experience area---------*/
+.experience-area{
+	margin-top:100px;
+	background-color:#F8F8F8;
+	padding:50px 0px;
+	
+}
+.experience-area .our-experience{}
+.experience-area .our-experience h2{
+	color: #000;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+.experience-area .our-experience h4{
+	color: #000;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.experience-area .our-experience p{
+	color: #000;
+    margin-top: 30px;
+}
+.experience-area #progress-area {margin-top:120px;}
+.experience-area #progress-area .progress{
+	margin:25px;
+    height: 30px;
+    box-shadow: none;
+    border-radius: 0;
+	background-color:#fff;
+}
+.experience-area #progress-area{}
+.experience-area #progress-area .progress-bar{
+	background-color:#FFA200;
+}
+.experience-area #progress-area .progress .progress-bar .sr-only{
+	float: left;
+    position: relative;
+    padding: 7px;
+    width: auto;
+    height: auto;
+	text-transform:capitalize;
+}
+.experience-area #progress-area .progress-bar .show-per{
+	float: right;
+    color: #fff;
+    font-weight: 700;
+	margin-top:5px;
+	margin-right:5px;
+}
+
+/*---------------CSS for Media Team area---------*/
+
+.media-team-area{background-color:#F8F8F8;}
+.media-team-area .container{
+	margin-top:100px;
+	padding-bottom:100px;
+}
+.media-team-header{
+	background:url(../img/obmt.png) no-repeat fixed 0 0;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.media-team-header h2{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 50px;
+}
+.media-team-area .single-team-member{	background-color:#fff;}
+.media-team-area .single-team-member .member-image{
+	width:100%;
+	height:263px;
+	position:relative;
+}
+.media-team-area .single-team-member .member-image img{
+	width:100%;
+	height:263px;
+}
+.media-team-area .single-team-member .member-image .image-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#000;
+    top: 0;
+	display:none;
+}
+.media-team-area .single-team-member img:hover{}
+.media-team-area .single-team-member:hover .image-hover{	display:block; opacity:0.5;transition:all 1s;}
+.media-team-area .single-team-member h2{
+	font-size:21px;
+	color:#000;
+	text-transform:uppercase;
+	margin-top:20px;
+}
+.media-team-area .single-team-member h4{
+	font-size:15px;
+	text-transform:uppercase;
+	color:#6A7478
+}
+.media-team-area .single-team-member p{
+	padding:20px;
+	color:#000;
+}
+.media-team-area .single-team-member .share{
+	background-color:#FFA200;
+	padding:5px;
+	width:100%;
+}
+.media-team-area .single-team-member .share i{
+	font-size:18px;
+	padding:10px;
+	color:#fff;
+}
+.media-team-area .single-team-member .share i:hover{
+	color:#c18215;
+}
+
+/*---------------CSS for Quote area---------*/
+
+.quote-area{
+	background:url(../img/quote-bg.png) no-repeat fixed 0 0;
+	margin-bottom:100px;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.quote-area p{
+    color: #fff;
+    font-family: serif;
+    max-width: 800px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px auto;
+	font-size:30px;
+}
+
+/*---------------CSS for Service area---------*/
+
+.service-area{
+	margin-bottom:100px;
+	position:relative;
+	text-align:center;
+}
+.service-area .service-bottom{
+    width:100%;
+	height:auto;
+}
+.service-area .single-service{margin-bottom:80px;}
+.service-area .single-service a{text-decoration:none;}
+.service-area .single-service .single-service-image{
+	display:inline-block;
+	position:relative;
+}
+.service-area .triangle-l{
+    width: 50px;
+	border: 3px solid #FFA200;
+	border-radius:3px;
+    background:  #FFA200;
+    height: 50px;
+}
+.service-area .single-service i{
+	font-size: 20px;
+    color: #FFF;
+	display:inline-block;
+	position:relative;
+    padding: 10px 15px;
+}
+.service-area .single-service i:before{
+	z-index:99;
+	position:relative;
+}
+.service-area .single-service div.rotate-2{
+    position: absolute;
+    width: 50px;
+	border-radius:3px;
+    left: 0;
+    background:  #FFA200;
+    height: 50px;
+    top:-3px;
+    transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	border: 3px solid #FFA200;
+}
+.service-area .single-service .single-service-image:hover div.rotate-2{background-color:#fff;}
+.service-area .single-service .single-service-image:hover i{
+	 color: #FFA200;
+	 background-color:#fff;
+	 transition:all 1s;
+ }
+.service-area .single-service h2 {
+	text-transform: none;
+    font-size: 23px;
+	color:#000;
+	margin-top:45px;
+	margin-bottom:15px;
+}
+.service-area .single-service p{
+	font-size: 15px;
+	color:#1D1E1D;
+}
+
+/*---------------CSS for Gallery area---------*/
+.gallery-area{margin-bottom:100px;}
+.project-list .mix{display:none;}
+
+ul.project-menu{
+	text-align:center;
+}
+.project-filter ul.project-menu li{
+	display:inline-block;
+	padding:10px;
+	font-weight:700;
+	cursor:pointer;
+	text-transform:uppercase;
+}
+.project-filter ul.project-menu li.active{color:#ffa200;}
+.gallery-area .tab-content {}
+.gallery-area .tab-content img {
+	width:270px;
+	height:270px;
+	float:left;
+	padding:5px;
+}
+
+.gallery-area  .project-list img{
+	width: 270px;
+    height: 270px;
+    float: left;    
+}
+.gallery-area  .project-list .single-project{
+	width:270px;
+	height:270px;
+	position:relative;
+}
+.project-detail{
+	position:absolute;
+	width:100%;
+	height:100%;
+	text-align:center;
+	background:rgba(0, 0, 0, 0.83);
+	-webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+	-moz-transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+	-o-transform: scale(0.5);
+	-ms-transform: scale(0.5);
+	transform: scale(0.5);
+	opacity: 0;
+}
+.single-project:hover .project-detail{
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+.project-detail a{
+	z-index:99;
+	padding:8px;
+	position:relative;
+	color:#fff;
+	display:inline-block;
+	margin: 120px 5px;
+}
+.project-detail a div.rotate-3{
+	border: 1px solid #ffa200;
+	border-radius: 3px;
+	height: 50px;
+	left: 0;
+	position: absolute;
+	top: -7px;
+	transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	width: 50px;
+	z-index:999;
+}
+
+/*---------------CSS for Blog area---------*/
+
+.blog-area{margin-bottom:100px;}
+.blog-area .single-blog{border:1px solid #ddd;}
+.blog-area .single-blog img{
+	width:100%;
+	height:auto;
+}
+.blog-area .single-blog h2{
+	font-size:18px;
+	padding:0px 15px;
+	color:#000;
+	margin:5px 0px;
+}
+.blog-area .single-blog h3{
+	font-size:14px;
+	padding:0px 15px;
+	margin:0;
+}
+.blog-area .single-blog h3 span{}
+.blog-area .single-blog p{
+    padding: 15px;
+}
+.blog-area .single-blog {}
+.blog-area .com-more{
+	padding: 5px;
+    text-transform: capitalize;
+    background: #D6D7D6;
+    overflow: hidden
+}
+.blog-area .com-more {}
+.blog-area .com-more a{
+	color: #363434;
+    font-weight: 700;
+}
+.blog-area .single-blog:hover{
+	border:1px solid #FFA200;
+}
+.blog-area .single-blog:hover .com-more{ background: #FFA200; color:#fff;}
+.blog-area .single-blog:hover .com-more i{color:#fff;}
+.blog-area .single-blog .com-more i{color:#FFA200;}
+.blog-area .single-blog:hover .com-more a{color:#fff;}
+.testimonial-area{
+	background:url(../img/test-bg.png) no-repeat scroll center center;
+	margin-bottom:100px;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+/*---------------CSS for Testimonial area---------*/
+
+.testimonial-area #testimonial-slider{}
+.testimonial-area #testimonial-slider .item{
+	padding-top:50px;
+	text-align:center;
+	padding-bottom:20px;
+}
+.testimonial-area #testimonial-slider .client-text{
+	padding:50px;
+	color:#fff;
+	
+}
+.testimonial-area #testimonial-slider .client-text p{
+    text-transform: capitalize;
+    font-family: serif;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.testimonial-area #testimonial-slider .client-text h4{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: serif;
+}
+.testimonial-area #testimonial-slider .client-text h5{
+	color: rgb(120, 122, 122);
+	font-size: 18px;
+    text-transform: uppercase;
+}
+.testimonial-area #testimonial-slider .client-face {
+	width:100px;
+	height:100px;
+	display:inline-block;
+}
+.testimonial-area #testimonial-slider .client-face img{
+	width:100%;
+	height:100%;
+	border-radius:50%;
+}
+.testimonial-area .client-img{
+	padding-bottom:50px;
+	padding-top:50px;
+	text-align:center;
+}
+.testimonial-area .bottom-less{
+	padding-bottom:0px;
+	padding-top:100px;
+}
+#testimonial-slider .owl-theme .owl-controls .owl-page span{display:none;}
+.testimonial-area .client-img img{
+	padding:20px;
+	cursor:pointer;
+	margin:0px 35px;
+}
+
+/*---------------CSS for Contact area---------*/
+
+.contact-area {margin-bottom:100px;}
+.contact-area .contact-info{}
+.contact-area .contact-info i{
+	color:#FFA200;
+	font-size:25px;
+}
+.contact-area .contact-info hr,.contact-area .massage-area hr{
+    width: 150px;
+    margin: 12px 0 0 0;
+    border-top: 1px solid #FFA200;
+	float:left;
+}
+.contact-area .contact-info h2,.contact-area .massage-area h2{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.contact-area .contact-info .contact{}
+.contact-area .contact-info .contact h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.contact-area .contact-info .contact p{
+    margin: 0px;
+    color: #000;
+    font-weight: 600;
+}
+.contact-area .massage-area{}
+
+.contact-area .massage-area .massage{
+	margin-left:-5px;
+	margin-top:25px;
+}
+.contact-area .massage-area .massage textarea{
+    margin-left: 5px;
+    margin-top: 5px;
+	border: 1px solid #FFA200;
+	padding:10px;
+}
+.contact-area .massage-area .massage input{
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #FFA200;
+}
+.massage-area .massage input[type=submit]{
+    font-size: 18px;
+    background: #FFA200;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+}
+.massage-area .massage input[type=submit]:hover,.comments .comment-form input[type="submit"]:hover{
+    background: rgb(200, 129, 4);
+}
+
+
+/*---------------CSS for Footer area---------*/
+
+
+.footer-area{
+	background:url(../img/footer-bg.png) no-repeat scroll center center;
+	padding:10px;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.footer-area .footer{text-align:center;color:#fff;}
+.footer-area .footer p{margin:20px;}
+.footer-area .footer .share{}
+.footer-area .footer .share .single-share{
+	display: inline-block;
+    position: relative;
+}
+.footer-area .footer .share i{
+    font-size: 18px;
+    padding: 9px 6px;
+	margin:10px;
+	color:#fff;
+	display:inline-block;
+	position:relative;
+}
+.footer-area .footer .share i:before{
+	z-index:999;
+	position:relative;
+}
+.footer-area .footer p{}
+
+.footer-area .footer .share  div.rotate-4{
+    position: absolute;
+    width: 35px;
+    transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	border: 1px solid #FFA200;
+	border-radius:3px;
+    left: 6px;
+    height: 35px;
+    top: 10px;
+}
+.footer-area .footer .share i:first-child{    margin-right: 20px;}
+.footer-area .footer .share .single-share:hover div.rotate-4{ background:  #FFA200;}
+.footer-area .footer .share .single-share:hover i{ color:#fff}
+
+
+/*----------------------------------------  SINGLE BLOG POST CSS ---------------------------------------------------*/
+
+.bg-color{
+	background: rgba(0, 0, 0, 0.7);
+}
+.welcome-blog-area{
+	background:url("../img/welcome-bg.png") repeat scroll center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	margin-top:-97px;
+	margin-bottom:80px;
+	position:relative;
+    background-position: 0px 298px;
+}
+.welcome-blog-area h2{
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:700;
+	color:#fff;
+	padding:160px 0px 80px 0px;
+	font-size:36px;
+}
+.main-content-area{}
+.main-content-area img{
+	height: auto;
+    width: 100%;
+}
+.main-content-area h2{
+	font-size: 24px;
+    color: #000;
+    margin: 10px 0px;
+    text-transform: capitalize;
+}
+.main-content-area h4{
+	font-size:14px;
+}
+.main-content-area p{
+	margin-top:20px;
+}
+.comments{}
+.comments h2{margin:30px 0px;}
+.comments .single-comment{margin: 25px 0px 25px 0px;}
+.comments .single-comment i{
+    margin: 0 10px;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+.comments .single-comment i:hover{color:#FFA200;}
+.comments .single-comment img{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+}
+.comments .single-comment h2{
+	margin:0;
+	font-size:16px;
+	font-weight:700;
+}
+.comments .single-comment h4{
+	font-size:12px;
+	margin: 5px 0px 10px 0px;
+}
+.comments .single-comment p{
+	font-size:14px;
+	margin:0;
+}
+.comments .single-comment .comment-reply{
+	margin: 25px 0px 25px 100px;
+}
+.comments .single-comment .comment-reply{}
+.comments .single-comment .comment-form{margin-top:40px;}
+.comments .comment-form input{
+	height:40px;
+	margin:12px 0px;
+	border:1px solid #FFA200;
+}
+.comments .comment-form textarea{
+	margin-top:10px;
+	border:1px solid #FFA200;
+}
+.comments .comment-form input[type="submit"]{
+	width:160px;
+	height:40px;
+	color:#fff;
+	background:#FFA200;
+	border:none;
+	display:block;
+	font-weight:700;
+	font-size:18px;
+}
+.sidebar .search{
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 43px;
+}
+.sidebar .search:hover{
+    border: 1px solid #FFA200;
+}
+.sidebar .search input{
+    width: 80%;
+    border: none;
+    border-right: 1px solid #ddd;
+    height: 38px;
+}
+.sidebar .search i{padding:10px;}
+.sidebar .latest-post{}
+.sidebar h2{
+	text-transform:uppercase;
+	color:#fff;
+	background-color:#FFA200;
+	padding:10px;
+	font-size:18px;
+	margin:15px 0px;
+}
+.sidebar .single-latest-post{margin-top:20px;cursor:pointer}
+.sidebar .single-latest-post .watch-video{
+	width:100%;
+	height:180px;
+	text-align:center;
+}
+.sidebar .single-latest-post .watch-video i{
+	margin: 70px 0px;
+    color: #ffa200;
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: #000;
+    border-radius: 8px;
+}
+.sidebar .single-latest-post .watch-video i:hover{
+	color:rgb(200, 129, 4);
+}
+.sidebar .single-latest-post img{
+	width:100%;
+	height:auto
+}
+.sidebar .single-latest-post iframe{
+	width:100%;
+	height:auto
+}
+.sidebar .single-latest-post h3 {
+	color:#000;
+	font-size:16px;
+	margin:10px 0px 5px 0px;
+	display:inline-block;
+}
+.sidebar .single-latest-post h3:hover {
+	color:#FFA200;
+}
+.sidebar .single-latest-post h4 {
+	font-size:12px;
+}
+.sidebar .tags{}
+.sidebar .tags ul{margin-left:-40px;}
+.sidebar .tags ul li{
+	display:inline-block;
+	margin:12px 0px;
+	padding:2px;
+}
+.sidebar .tags ul li a{
+	padding:10px;
+	color:#000;
+	text-transform:capitalize;
+	border:1px solid #ddd;
+}
+.sidebar .tags ul li a:hover{
+	color:#fff;
+	background-color:#FFA200;
+	border:1px solid #FFA200;
+}
+
+
+/*---------------CSS for scrollbar---------*/
+#scrollUp {
+    bottom: 5px;
+    right: 15px;
+    padding: 15px;
+    background:#FFA200;
+    color: #fff;
+	box-shadow:0 0 5px 4px #000;
+	-webkit-box-shadow:0 0 5px 4px #000;
+	-moz-box-shadow:0 0 5px 4px #000;
+	-ms-box-shadow:0 0 5px 4px #000;
+	
+}
+#scrollUp:hover{background: rgb(200, 129, 4);}
+
+/*---------------CSS for Google map---------*/
+
+#map{
+	height: 400px;
+    margin-top: 60px;
+    max-width: 100%;
+}
+	
+
+/*---------------CSS for Preloader---------*/
+
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:10000000000; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/727.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}	
